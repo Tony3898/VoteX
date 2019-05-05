@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/extra"
     tools:context=".SignInActivity">
 
     <android.support.constraint.ConstraintLayout
@@ -57,12 +56,12 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:gravity="center"
-            android:text="@string/app_name"
+            android:text="VoteX"
             android:textAllCaps="true"
-            android:textColor="@color/colorPrimaryAccent"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
             android:textStyle="bold|italic"
-            app:fontFamily="sans-serif-medium"
+            app:fontFamily="@font/coiny"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -126,44 +125,14 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/gradientbackradius"
             android:text="Sign In"
             android:textColor="@color/extra"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signinpasswordeditText" />
-
-        <TextView
-            android:id="@+id/notamembertextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Not A member? SignUp"
-            android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/forgottextView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signinbutton" />
-
-        <TextView
-            android:id="@+id/forgottextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="ForgotPassword?"
-            android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/notamembertextView"
-            app:layout_constraintTop_toBottomOf="@+id/signinbutton" />
 
     </android.support.constraint.ConstraintLayout>
 

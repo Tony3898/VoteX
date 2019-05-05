@@ -92,7 +92,7 @@ public class AddCandidateActivity extends AppCompatActivity {
                 }
                 else if(candidateAdhaar.length()!=12)
                 {
-                    candidateAdhaarEditText.setError("Check your Adhaar Numbee");
+                    candidateAdhaarEditText.setError("Check your Adhaar Number.");
                 }
                 else {
 
